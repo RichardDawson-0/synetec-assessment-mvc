@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Common.Interfaces;
+using InterviewTestTemplatev2.ViewModels;
 
 namespace InterviewTestTemplatev2.Models
 {
@@ -9,8 +11,8 @@ namespace InterviewTestTemplatev2.Models
     {
 
         public int BonusPoolAmount { get; set; }
-        public List<Data.HrEmployee> AllEmployees { get; set; }        
-        public int SelectedEmployeeId { get; set; }
+        public List<HrEmployeeViewModel> AllEmployees { get; set; }        
+        public string SelectedEmployeeId_Enc { get; set; }
 
     }
 }
